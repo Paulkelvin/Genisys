@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header-main {
+  background-color: #333;
+}
+
+.header-top {
+  border-bottom: 1px solid #444;
+}
+
+.white-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-toggler {
+  background-color: white;
+}
+
+.hero-section {
+  position: relative; /* Ensures the pseudo-element is positioned relative to this container */
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 56px;
+  background-image: url("/assets/pexels-pixabay-164595.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 56px);
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark overlay with 50% opacity */
+  z-index: -1; /* Places the overlay behind the content */
+}
+
+.btn-primary {
+  background-color: #00b74a;
+  border-color: #00b74a;
+}
+.btn-light {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.fancy-box-01 {
+  position: relative;
+}
+.fancy-box-01 .left-f {
+  border: 10px solid;
+  border-right: none;
+  height: 100%;
+  width: 3rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.fancy-box-01 .right-f {
+  border: 10px solid;
+  border-left: none;
+  height: 100%;
+  width: 3rem;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.bg-primary-light {
+  background-color: rgba(248, 78, 119, 0.08);
+}
+
+.border-primary {
+  border-color: #f84e77 !important;
+}
+
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.lh-sm {
+  line-height: 1.25 !important;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  color: #101010;
+  letter-spacing: -0.02em;
+}
+
+.white-text .display-1,
+.white-text .display-2,
+.white-text .display-3,
+.white-text .display-4 {
+  color: #ffffff;
+}
+
+.fancy-box-01 {
+  position: relative;
+}
+.fancy-box-01 .left-f {
+  border: 10px solid;
+  border-right: none;
+  height: 100%;
+  width: 3rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.fancy-box-01 .right-f {
+  border: 10px solid;
+  border-left: none;
+  height: 100%;
+  width: 3rem;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* rooms section */
+
+.rooms-section {
+  background-color: #f8f9fa; /* Light background for the section */
+}
+
+.rooms-section img {
+  width: 100%;
+  height: auto;
+}
+
+.rooms-section h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.no-gutters {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.rooms-section p,
+.rooms-section ul {
+  color: #666;
+}
+
+.rooms-section .btn-primary {
+  margin-right: 10px; /* Space between buttons */
+}
+
+.rooms-section .btn-outline-primary {
+  color: #007bff; /* Bootstrap primary color */
+  border-color: #007bff; /* Consistent with outline color */
+}
+
+/* services section */
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #ff5733; /* Custom primary color */
+  border: none;
+}
+
+/* Adjusting heading styles */
+.card-title {
+  color: #ff5733;
+  font-size: 1.25rem;
+}
+
+/* Gallery */
+.carousel-container {
+  font-size: 1.6rem;
+  background-color: antiquewhite;
+  display: flex; /* Use flex for better control */
+  justify-content: center; /* Center content */
+  align-items: center; /* Center vertically */
+  min-height: 100vh;
+  display: grid;
+  font-size: 62%;
+  width: 100%;
+}
+
+.carousel-container .carousel {
+  width: 85%;
+  position: relative;
+  margin: auto;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__item {
+  position: relative;
+  height: 25rem;
+  width: 12rem;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0.1);
+  z-index: 0;
+  transition: all 0.2s linear;
+}
+.carousel__item img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.carousel__item--main {
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.carousel__item--left {
+  transform: translate(-110%, -50%) scale(0.9);
+  z-index: 1;
+}
+.carousel__item--right {
+  transform: translate(10%, -50%) scale(0.9);
+  z-index: 1;
+}
+.carousel__item--left img,
+.carousel__item--right img {
+  filter: grayscale(80%);
+}
+
+.carousel__item--right:hover {
+  transform: translate(10%, -50%) scale(1.2);
+  z-index: 3;
+  cursor: pointer;
+}
+.carousel__item--left:hover {
+  transform: translate(-110%, -50%) scale(1.2);
+  z-index: 3;
+  cursor: pointer;
+}
+.carousel__item--main:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.carousel__item:hover > .carousel__text {
+  opacity: 1;
+}
+.carousel__item:hover img {
+  filter: grayscale(0%);
+}
+
+.carousel__text {
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.2s;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem 1rem;
+  color: #fff;
+}
+
+.carousel__btns {
+  position: absolute;
+  transform: translate(-50%, 14rem);
+  display: flex;
+  gap: 2rem;
+  -webkit-transform: translate(-50%, 14rem);
+  -moz-transform: translate(-50%, 14rem);
+  -ms-transform: translate(-50%, 14rem);
+  -o-transform: translate(-50%, 14rem);
+}
+
+.carousel__btn {
+  background-color: transparent;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  color: #fff;
+  cursor: pointer;
+}
+.carousel__btn svg {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.carousel__btn:hover {
+  color: #aaa;
+}
+
+.card {
+  border: none;
+  background: #f8f9fa; /* Light background for the card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced box shadow for a subtle effect */
+}
+
+.card-body {
+  padding-left: 0; /* Standard padding for card body */
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transform for hover effects */
+}
+
+.btn.position-absolute {
+  background-color: transparent; /* Transparent background for the button */
+  border: none;
+  cursor: pointer; /* Cursor indicates the image/button is clickable */
+}
+
+.btn i.fa-play {
+  color: #007bff; /* Bootstrap primary color for the play icon */
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Text shadow to make the icon stand out */
+}

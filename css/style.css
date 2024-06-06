@@ -204,125 +204,6 @@ body {
 }
 
 /* Gallery */
-.carousel-container {
-  font-size: 1.6rem;
-  background-color: antiquewhite;
-  display: flex; /* Use flex for better control */
-  justify-content: center; /* Center content */
-  align-items: center; /* Center vertically */
-  min-height: 100vh;
-  display: grid;
-  font-size: 62%;
-  width: 100%;
-}
-
-.carousel-container .carousel {
-  width: 85%;
-  position: relative;
-  margin: auto;
-}
-
-.carousel {
-  position: relative;
-}
-
-.carousel__item {
-  position: relative;
-  height: 25rem;
-  width: 12rem;
-  border-radius: 3px;
-  overflow: hidden;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
-  position: absolute;
-  transform: translate(-50%, -50%) scale(0.1);
-  z-index: 0;
-  transition: all 0.2s linear;
-}
-.carousel__item img {
-  width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-}
-
-.carousel__item--main {
-  transform: translate(-50%, -50%) scale(1);
-  z-index: 2;
-  cursor: pointer;
-}
-
-.carousel__item--left {
-  transform: translate(-110%, -50%) scale(0.9);
-  z-index: 1;
-}
-.carousel__item--right {
-  transform: translate(10%, -50%) scale(0.9);
-  z-index: 1;
-}
-.carousel__item--left img,
-.carousel__item--right img {
-  filter: grayscale(80%);
-}
-
-.carousel__item--right:hover {
-  transform: translate(10%, -50%) scale(1.2);
-  z-index: 3;
-  cursor: pointer;
-}
-.carousel__item--left:hover {
-  transform: translate(-110%, -50%) scale(1.2);
-  z-index: 3;
-  cursor: pointer;
-}
-.carousel__item--main:hover {
-  transform: translate(-50%, -50%) scale(1.2);
-}
-.carousel__item:hover > .carousel__text {
-  opacity: 1;
-}
-.carousel__item:hover img {
-  filter: grayscale(0%);
-}
-
-.carousel__text {
-  position: absolute;
-  bottom: 0;
-  z-index: 4;
-  opacity: 0;
-  transition: opacity 0.2s;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem 1rem;
-  color: #fff;
-}
-
-.carousel__btns {
-  position: absolute;
-  transform: translate(-50%, 14rem);
-  display: flex;
-  gap: 2rem;
-  -webkit-transform: translate(-50%, 14rem);
-  -moz-transform: translate(-50%, 14rem);
-  -ms-transform: translate(-50%, 14rem);
-  -o-transform: translate(-50%, 14rem);
-}
-
-.carousel__btn {
-  background-color: transparent;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  border: 1px solid currentColor;
-  color: #fff;
-  cursor: pointer;
-}
-.carousel__btn svg {
-  height: 1.8rem;
-  width: 1.8rem;
-}
-.carousel__btn:hover {
-  color: #aaa;
-}
 
 .card {
   border: none;
@@ -349,4 +230,39 @@ body {
 .btn i.fa-play {
   color: #007bff; /* Bootstrap primary color for the play icon */
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Text shadow to make the icon stand out */
+}
+
+/* Testimonials */
+
+.section-testimonials {
+  background-color: #f8f9fa;
+}
+
+.card-body blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+.card-body img {
+  border: 3px solid #fff; /* White border around the image for better separation from background */
+}
+
+.blockquote-footer {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

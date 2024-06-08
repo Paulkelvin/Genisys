@@ -1,34 +1,24 @@
-'use strict';
+"use strict";
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector(".header-main");
 
-const carouselItems = document.querySelectorAll('.carousel__item');
-console.log(carouselItems)
-let currentItem = document.querySelector('.carousel__item--main');
-const leftBtn = document.querySelector('#leftBtn');
-const rightBtn = document.querySelector('#rightBtn');
+  function changeHeaderOnScroll() {
+    const h1Position =
+      document.querySelector("h1").getBoundingClientRect().top +
+      window.scrollY -
+      header.offsetHeight;
+    const scrollPosition = window.scrollY;
 
+    if (scrollPosition >= h1Position) {
+      header.classList.add("header-scrolled");
+    } else {
+      header.classList.remove("header-scrolled");
+    }
+  }
 
-rightBtn.addEventListener('click', function() {
-    currentItem = document.querySelector('.carousel__item--right');
-    const leftItem = document.querySelector('.carousel__item--main');
-    carouselItems.forEach((item,i) => {
-        item.classList = 'carousel__item';
-    });
-    currentItem.classList.add('carousel__item--main');
-    leftItem.classList.add('carousel__item--left');
-    const currentId = Array.from(carouselItems).indexOf(currentItem);
-    const rightItem = currentId === carouselItems.length -1 ? carouselItems[0] : carouselItems[currentId +1];
-    rightItem.classList.add('carousel__item--right');
-});
+  // Check the header status on initial load
+  changeHeaderOnScroll();
 
-leftBtn.addEventListener('click', function() {
-    currentItem = document.querySelector('.carousel__item--left');
-    const rightItem = document.querySelector('.carousel__item--main');
-    carouselItems.forEach((item,i) => {
-        item.classList = 'carousel__item';
-    });
-    currentItem.classList.add('carousel__item--main');
-    rightItem.classList.add('carousel__item--right');
-    const currentId = Array.from(carouselItems).indexOf(currentItem);
-    const leftItem = currentId === 0 ? carouselItems[carouselItems.length-1] : carouselItems[currentId-1];
-    leftItem.classList.add('carousel__item--left');
+  // Update on scroll
+  window.addEventListener("scroll", changeHeaderOnScroll);
 });

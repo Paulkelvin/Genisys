@@ -8,55 +8,158 @@ body {
   overflow-x: hidden;
 }
 
-.header-main {
-  background-color: #333;
-}
-
 .header-top {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
 }
 
-.white-link a {
-  color: white;
+header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-main.header-scrolled .header-top,
+.header-main.header-scrolled .nav-link,
+.header-main.header-scrolled .white-link a {
+  color: #333 !important; /* Ensure this is more specific */
+  transition: color 0.3s ease;
+}
+
+.header-main.header-scrolled {
+  background-color: #f9f9f9; /* Creamy white background */
+  transition: background-color 0.3s ease;
+}
+
+.header-main.header-scrolled .navbar-toggler {
+  border-color: #333;
+}
+
+.white-link a,
+.nav-link {
+  color: #f9f9f9 !important;
   text-decoration: none;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-}
-.navbar-toggler {
-  background-color: white;
-}
-
 .hero-section {
-  position: relative; /* Ensures the pseudo-element is positioned relative to this container */
+  position: relative;
   color: #fff;
   min-height: 100vh;
   padding-top: 56px;
-  background-image: url("/assets/pexels-pixabay-164595.jpg");
+  background-image: url("/assets/IMG-20240603-WA0046.jpg");
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 56px);
 }
 
-.hero-section::before {
-  content: "";
+.overlay {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9); /* Dark overlay with 50% opacity */
-  z-index: -1; /* Places the overlay behind the content */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: -1;
 }
 
-.btn-primary {
+.hero-section .text-center {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-secondary {
+  background-color: #00b74a;
+  border: none;
+  color: #fff; /* Ensure text color is always white */
+}
+
+.btn-secondary:hover {
+  background-color: #00802b;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sm {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  border-radius: 0;
+  background-color: #00b74a;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-lg {
+  padding: 1rem 1.875rem;
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* .btn-primary {
   background-color: #00b74a;
   border-color: #00b74a;
-}
+} */
+
 .btn-light {
   background-color: #f8f9fa;
   color: #333;
+}
+
+/* Spacing between navigation links */
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+
+/* Increase the space before the 'Call now' button */
+.extra-menu {
+  margin-left: 2rem; /* Adjust as needed to push it further right */
+}
+
+/* Ensure the last item (Contact Us) doesn't have additional margin on the right */
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+  color: #c0c0c0 !important;
+}
+
+/* Hover effect for 'Contact Us' link in the nav menu for visual distinction */
+.nav-item.contact-btn a:hover {
+  color: #fff;
+}
+
+.header-main {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.header-scrolled {
+  backdrop-filter: blur(0px); /* Remove the blur when scrolled */
+  background-color: #f9f9f9; /* Change to a solid color on scroll */
+}
+
+.header-scrolled .nav-link,
+.header-scrolled .white-link a {
+  color: #333; /* Darker text for better visibility */
+}
+
+.header-scrolled .navbar-toggler {
+  border-color: #333; /* Optional: change toggle button style if needed */
 }
 
 .fancy-box-01 {
@@ -74,6 +177,7 @@ body {
   bottom: 0;
   margin: auto;
 }
+
 .fancy-box-01 .right-f {
   border: 10px solid;
   border-left: none;
@@ -265,4 +369,33 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+footer a {
+  color: #f8f9fa;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #adb5bd;
+}
+
+footer h5 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ced4da;
+}
+
+.social-icons a {
+  font-size: 18px; /* Adjust the size of the icons */
 }

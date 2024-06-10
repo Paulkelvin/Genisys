@@ -9,34 +9,44 @@ body {
 }
 
 .header-top {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Ensures a visible line between the header top and the main header */
 }
 
-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.header-main.header-scrolled .header-top,
-.header-main.header-scrolled .nav-link,
-.header-main.header-scrolled .white-link a {
-  color: #333 !important; /* Ensure this is more specific */
-  transition: color 0.3s ease;
-}
-
-.header-main.header-scrolled {
-  background-color: #f9f9f9; /* Creamy white background */
+.header-main {
+  background-color: #005f73; /* Vibrant header color */
+  color: #ffffff;
   transition: background-color 0.3s ease;
 }
 
-.header-main.header-scrolled .navbar-toggler {
-  border-color: #333;
+.header-main .nav-link,
+.header-main .white-link a {
+  color: #ffffff !important; /* Ensures links are white */
+  text-decoration: none;
 }
 
-.white-link a,
-.nav-link {
-  color: #f9f9f9 !important;
-  text-decoration: none;
+/* Hover and focus styles for links in the header */
+.header-main .nav-link:hover,
+.header-main .nav-link:focus,
+.header-main .white-link a:hover,
+.header-main .white-link a:focus {
+  color: #c2e0f4; /* Light blue for hover/focus */
+  transition: color 0.2s ease-in-out;
+}
+
+.header-main.header-scrolled {
+  background-color: #023e58; /* Slightly darker on scroll */
+  transition: background-color 0.3s ease;
+}
+
+/* Ensuring text stays white even when the header is scrolled */
+.header-main.header-scrolled .nav-link,
+.header-main.header-scrolled .white-link a {
+  color: #ffffff !important; /* Making text white for visibility on scrolled header */
+}
+
+.navbar-toggler {
+  border-color: #ffffff; /* Make toggle visible */
 }
 
 .hero-section {
@@ -107,14 +117,41 @@ h1 {
   line-height: 1.2;
 }
 
-/* .btn-primary {
-  background-color: #00b74a;
-  border-color: #00b74a;
-} */
+.heading-color {
+  color: #00b74a;
+}
+
+/* Primary button uses a deeper shade for prominence */
+.btn-primary {
+  background-color: #3174ad; /* A deep blue */
+  color: #ffffff; /* White text for contrast */
+  border: none;
+}
+
+/* Secondary button with a softer appearance */
+.btn-outline-primary {
+  background-color: transparent;
+  color: #3174ad; /* Same blue as the primary button, but softer appearance */
+  border-color: #3174ad; /* Border matches the text color */
+}
+
+/* Hover effects to make interactive elements clear */
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: #25597b; /* A darker shade of the primary color for hover */
+  color: #ffffff;
+}
 
 .btn-light {
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #4ab7ff;
+  color: #fff;
+  border: none;
+}
+
+.btn-light:hover {
+  background-color: #409ad5;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 
 /* Spacing between navigation links */
@@ -158,45 +195,114 @@ h1 {
   color: #333; /* Darker text for better visibility */
 }
 
+.header-scrolled .nav-link:hover {
+  color: #4ab7ff !important;
+  transition: color 0.3s ease;
+}
+
 .header-scrolled .navbar-toggler {
   border-color: #333; /* Optional: change toggle button style if needed */
 }
 
+.soft-gradient-bg {
+  background: linear-gradient(135deg, #ffffff 0%, #f7f9fc 100%);
+
+  /* This creates an extremely subtle gradient from white to a very light blueish grey */
+}
+
+.section-padding {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
 .fancy-box-01 {
   position: relative;
+  padding: 0 4rem; /* Add padding to the left and right */
+  text-align: center; /* Center the text within the box */
+  padding-right: 2rem;
 }
-.fancy-box-01 .left-f {
+
+.fancy-box-01 .display-1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.fancy-box-01 .left-f,
+.fancy-box-01 .right-f {
   border: 10px solid;
-  border-right: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
   height: 100%;
   width: 3rem;
-  display: block;
-  position: absolute;
+}
+
+.fancy-box-01 .left-f {
+  border-right: none;
   left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
 }
 
 .fancy-box-01 .right-f {
-  border: 10px solid;
   border-left: none;
-  height: 100%;
-  width: 3rem;
-  display: block;
-  position: absolute;
   right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
 }
 
+/* Subdued grey text for descriptions and sub-headings */
+.text-muted-custom {
+  color: #6c757d; /* Soft grey */
+}
+
+/* Specific styling to increase the left padding of the middle column on larger screens */
+.padded-column {
+  padding-left: 4rem;
+}
+
+mark,
+.mark,
+.mark {
+  color: inherit;
+  padding: 0;
+  background: 0 0;
+  background-image: linear-gradient(
+    120deg,
+    #b0dfff 0%,
+    /* Start color */ #b0dfff 100%
+      /* End color - you can adjusf this to a lighter or darker shade if desired */
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0 80%;
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .fancy-box-01 {
+    padding: 0 2rem; /* Reduce padding on smaller screens */
+  }
+}
+
+/* Styling adjustments for legibility and branding */
 .bg-primary-light {
-  background-color: rgba(248, 78, 119, 0.08);
+  color: #4ab7ff; /* Full opacity for the text color */
+  background-color: rgba(
+    74,
+    183,
+    255,
+    0.08
+  ); /* Background color with reduced opacity */
+}
+
+.bg-secondary-light {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 183, 74, 0.1) 0%,
+    rgba(0, 183, 74, 0.1) 100%
+  );
 }
 
 .border-primary {
-  border-color: #f84e77 !important;
+  border-color: #4ab7ff !important;
 }
 
 .lh-1 {
@@ -213,6 +319,7 @@ h1 {
 .display-4 {
   color: #101010;
   letter-spacing: -0.02em;
+  font-size: calc(1.375rem + 1.5vw); /* Responsive font size */
 }
 
 .white-text .display-1,
@@ -220,35 +327,6 @@ h1 {
 .white-text .display-3,
 .white-text .display-4 {
   color: #ffffff;
-}
-
-.fancy-box-01 {
-  position: relative;
-}
-.fancy-box-01 .left-f {
-  border: 10px solid;
-  border-right: none;
-  height: 100%;
-  width: 3rem;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.fancy-box-01 .right-f {
-  border: 10px solid;
-  border-left: none;
-  height: 100%;
-  width: 3rem;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
 }
 
 /* rooms section */
@@ -277,42 +355,141 @@ h1 {
   color: #666;
 }
 
-.rooms-section .btn-primary {
-  margin-right: 10px; /* Space between buttons */
+/* Base style for room cards */
+.room-card {
+  background-color: #f0f4f8; /* Light grayish blue, very subtle */
+  border-radius: 4px; /* Soft rounded corners for a smoother look */
+  border: 1px solid #d1e1e9; /* Light blue border to add definition */
 }
 
-.rooms-section .btn-outline-primary {
-  color: #007bff; /* Bootstrap primary color */
-  border-color: #007bff; /* Consistent with outline color */
+/* Alternate color for another set of cards */
+.room-card-alt {
+  background-color: #e7eff6; /* Slightly different shade of light blue */
+}
+
+/* Card content area styling */
+.room-card-body {
+  padding: 15px; /* Adequate padding for content separation */
+  color: #333; /* Dark grey text for better readability */
+}
+
+/* Style for the play button to make it stand out appropriately */
+.room-card .btn-play {
+  background-color: #005f73; /* Using a darker, vibrant color from your palette */
+  color: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensuring the image fits well */
+.room-card img {
+  border-top-left-radius: 4px; /* Rounded corners on the image top */
+  border-top-right-radius: 4px;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive tweaks for better mobile display */
+@media (max-width: 768px) {
+  .room-card-body {
+    padding: 10px;
+  }
 }
 
 /* services section */
-.card {
-  border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.card-body {
+.service-card {
   text-align: center;
-}
-
-.btn-primary {
-  background-color: #ff5733; /* Custom primary color */
+  padding: 20px;
   border: none;
+  transition: all 0.3s ease;
 }
 
-/* Adjusting heading styles */
-.card-title {
-  color: #ff5733;
+.service-card i {
+  color: #00b74a; /* Green to match your branding */
+  margin-bottom: 10px;
+}
+
+.service-card h5 {
+  color: #333; /* Dark text for readability */
   font-size: 1.25rem;
+}
+
+.service-card p {
+  color: #666; /* Lighter text to reduce emphasis */
+}
+
+/* Base colors definitions */
+:root {
+  --light-green: #ccf2d6; /* Soft green */
+  --light-blue: #e0f4fd; /* Soft blue */
+  --light-yellow: #fff9e6; /* Soft yellow */
+}
+
+/* General card styles */
+.service-card {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(
+    --light-green
+  ); /* Default light background for all cards */
+  color: #333; /* Ensuring text is readable on light background */
+}
+
+/* Specific colors for different cards for visual interest */
+.service-card1,
+.service-card2 {
+  /* First and second card */
+  background-color: var(--light-blue);
+}
+
+.service-card3,
+.service-card4 {
+  /* Third and fourth card */
+  background-color: var(--light-yellow) !important;
+}
+
+.col-md-6 {
+  flex: 1 0 50%; /* Each box takes up 50% width on medium and larger screens */
+  padding: 5px; /* Provides spacing between boxes */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .col-md-6 {
+    flex: 1 0 100%; /* Each card takes full width on smaller screens */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .service-card {
+    margin-bottom: 5px;
+  }
 }
 
 /* Gallery */
 
+.carousel-item img {
+  height: 400px; /* Set a fixed height for images in the carousel */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+@media (max-width: 992px) {
+  .carousel-item img {
+    height: 250px; /* Smaller height for smaller devices */
+  }
+}
+
 .card {
   border: none;
   background: #f8f9fa; /* Light background for the card */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced box shadow for a subtle effect */
 }
 
 .card-body {
@@ -339,63 +516,139 @@ h1 {
 /* Testimonials */
 
 .section-testimonials {
-  background-color: #f8f9fa;
+  background: linear-gradient(
+    135deg,
+    #eef2f3 0%,
+    #d3dfe9 100%
+  ); /* Updated subtle gradient background */
+  padding: 2rem 0; /* Added padding for overall spacing */
+}
+
+.testimonial-card {
+  padding: 1.5rem; /* Slightly increased padding */
+  background-color: #ffffff;
+  margin: 0.5rem;
+  border: none !important;
 }
 
 .card-body blockquote {
   font-style: italic;
-  color: #555;
+  color: #555; /* Slightly darker for better readability */
 }
 
 .card-body img {
-  border: 3px solid #fff; /* White border around the image for better separation from background */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Circle shape */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  margin-top: -3rem; /* Pull the image up to overlap the card edge slightly */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow around the image */
 }
 
 .blockquote-footer {
-  color: #666;
+  color: #999; /* Lighter grey for a softer appearance */
   font-size: 0.875rem;
+  text-align: right; /* Ensure alignment is consistent */
+  margin-top: 1rem; /* Space from the quote to the footer for clarity */
+  background-color: transparent;
+}
+
+.location-section {
+  background-color: #f4f4f7; /* A soft grey or your theme's light color */
+  color: #333;
+  font-family: "Open Sans", sans-serif; /* Example font */
+}
+
+.location-section h2,
+.location-section h3,
+.location-section h4 {
+  color: #005f73; /* Theme color for headers */
+}
+
+.location-section p {
+  line-height: 1.6;
 }
 
 .map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+  border-radius: 10px;
+  overflow: hidden; /* To apply border-radius on iframe */
 }
 
-.map-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.location-section a {
+  color: #005f73;
+  text-decoration: none;
 }
 
-footer {
-  background-color: #343a40;
-  color: #f8f9fa;
+.location-section a:hover {
+  color: #023e58; /* Darker shade on hover */
 }
 
-footer a {
-  color: #f8f9fa;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: #adb5bd;
-}
-
-footer h5 {
+.btn-directions {
+  background-color: #005f73;
   color: #ffffff;
-  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-footer p {
-  font-size: 14px;
-  line-height: 1.7;
+.btn-directions:hover {
+  background-color: #023e58;
+}
+.footer {
+  background-color: #343a40; /* A dark color for professional appearance */
+  color: #f8f9fa; /* Light text for contrast */
+  padding: 20px 0;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer p,
+.footer a {
   color: #ced4da;
+  font-size: 0.9rem; /* Smaller text size for footer elements */
 }
 
-.social-icons a {
-  font-size: 18px; /* Adjust the size of the icons */
+.footer a:hover {
+  color: #adb5bd !important; /* Lighter grey on hover for links */
+}
+
+.footer ul {
+  padding: 0;
+  list-style-type: none; /* Removes bullet points from links */
+}
+
+footer .list-unstyled li a {
+  text-decoration: none;
+}
+
+.footer-contact p {
+  text-decoration: none;
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem; /* Larger icons for visibility */
+  display: inline-block; /* Proper alignment of icons */
+}
+
+.footer .social-icons a:hover {
+  color: #ffffff !important;
+}
+
+/* Heading Style */
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  color: #005f73;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Style */
+.room-card-body {
+  background-color: #e8f5e9;
+}
+.room-card-body2 {
+  background-color: #e3f2fd;
 }

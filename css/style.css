@@ -1,7 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -721,4 +723,13 @@ footer .list-unstyled li a {
 }
 .room-card-body2 {
   background-color: #e3f2fd;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
 }

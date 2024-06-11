@@ -19,6 +19,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -28,23 +33,33 @@
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
             <!-- Left -->
-            <div class="d-flex white-link d-none d-md-flex py-2">
+            <div class="d-flex white-link d-none d-md-flex">
               <!-- Top link -->
-              <a href="#" class="me-3">support@domain.com</a>
-              <a href="#" class="me-3">+01 180 956 5252</a>
+              <a href="mailto:genisysguesthouse@gmail.com" target="_blank" class="me-3">genisysguesthouse@gmail.com</a>
+              </a
+            >
+              <a href="tel:+2348169826503" target="_blank" class="me-3">+2348169826503</a>
             </div>
             <!-- Right -->
             <div
               class="nav white-link justify-content-center justify-content-md-end"
             >
-              <a class="me-4" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a
+                class="me-4"
+                href="https://web.facebook.com/profile.php?id=61560623737776"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
               <a class="me-4" href="#"><i class="fab fa-twitter"></i></a>
               <a
                 class="me-4"
                 href="https://www.instagram.com/genisys_guest_house/"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a class="me-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a
+                class="me-4"
+                href="https://www.linkedin.com/company/genisys-guest-house"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -76,23 +91,20 @@
                 <a href="#" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">About Us</a>
+                <a href="#about" class="nav-link">About Us</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
+                <a href="#rooms" class="nav-link">Rooms</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Prices</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Team</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
               </li>
               <li class="nav-item contact-btn">
-                <a href="#" class="nav-link">Contact Us</a>
+                <a href="#location" class="nav-link">Location</a>
               </li>
             </ul>
             <div class="extra-menu d-none d-lg-block ps-4">
-              <a class="btn btn-secondary btn-sm" href="#">Call now</a>
+              <a class="btn btn-secondary btn-sm" href="tel:+2348169826503">Call now</a>
             </div>
           </div>
           <!-- End Menu -->
@@ -103,14 +115,11 @@
     <div class="hero-section d-flex align-items-center justify-content-center">
       <div class="overlay"></div>
       <div class="text-center text-white">
-        <h1>Welcome to Corpo Consulting</h1>
+        <h1>Welcome to Genisys Guest House</h1>
         <p>
-          Your partner for success in business. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Beatae, blanditiis necessitatibus eos
-          similique ex tempora minima magni tenetur quisquam ipsum fugiat quas
-          doloremque nihil accusantium voluptates libero id, mollitia iusto!
+          Discover comfort and convenience at <strong>Genisys Guest House</strong>, your home away from home in Ijebu Ode. Whether you're in town for business or relaxation, our friendly staff is dedicated to making your stay memorable. Enjoy our modern amenities, exceptional service, and the warm hospitality that Genisys is known for.
         </p>
-        <div class="mt-4">
+          <div class="mt-4">
           <a href="#contact" class="btn btn-secondary btn-lg me-3"
             >Contact Now</a
           >
@@ -153,7 +162,7 @@
       </div>
     </section>
 
-    <section class="section bg-secondary-light section-padding">
+    <section class="section bg-secondary-light section-padding" id="about">
       <div class="container">
         <div class="row g-4 align-items-center">
           <div class="col-lg-6 pe-lg-8 pe-xl-12">
@@ -163,17 +172,21 @@
               A Home Away From Home
             </h3>
             <p>
-              Nestled in the heart of the city, Genisys Guest House offers a
-              tranquil retreat with luxurious rooms designed for your utmost
-              comfort. Our guest house combines modern amenities with
-              personalized service, ensuring every stay is a memorable one.
+              Located in Ijebu Ode, Genisys Guest House provides a serene oasis
+              offering luxury accommodation tailored for ultimate comfort. Our
+              state-of-the-art amenities and bespoke services are designed to
+              cater to the sophisticated tastes of both leisure and business
+              travelers.
             </p>
             <p>
-              Whether you're visiting for business or leisure, our dedicated
-              staff are committed to providing exceptional service and catering
-              to your every need, making Genisys Guest House the perfect choice
-              for discerning travelers.
+              At Genisys Guest House, every detail is crafted with precision to
+              enhance your stay. Whether you are seeking a peaceful getaway or
+              require top-notch facilities for corporate events, our dedicated
+              team ensures that each visit is flawless and unforgettable. Choose
+              Genisys for a premium lodging experience in Ijebu Ode, where
+              traditional hospitality meets modern luxury.
             </p>
+
             <div class="pt-3">
               <a class="btn btn-secondary btn-lg" href="#">
                 <span class="btn--text">Learn More</span>
@@ -207,7 +220,7 @@
     </section>
 
     <!-- Room/accomodation section -->
-    <section class="rooms-section bg-light py-5">
+    <section class="rooms-section bg-light py-5" id="rooms">
       <div class="container">
         <h2 class="text-start mb-4">
           Explore Our <mark>Comfortable Rooms</mark>
@@ -224,7 +237,7 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                   <img
-                    src="/assets/room-1.jpg"
+                    src="https://i.imgur.com/n2xkKP5.jpeg"
                     class="d-block w-100"
                     alt="Simple Family Room"
                   />
@@ -232,7 +245,7 @@
                 <!-- Slide 2 -->
                 <div class="carousel-item">
                   <img
-                    src="/assets/room-1.jpg"
+                    src="https://i.imgur.com/FaEtick.jpeg"
                     class="d-block w-100"
                     alt="Simple Family Room View 2"
                   />
@@ -240,7 +253,7 @@
                 <!-- Slide 3 -->
                 <div class="carousel-item">
                   <img
-                    src="/assets/room-1.jpg"
+                    src="https://i.imgur.com/yFpifer.jpeg"
                     class="d-block w-100"
                     alt="Simple Family Room View 3"
                   />
@@ -273,18 +286,16 @@
             </div>
           </div>
           <div class="col-md-6">
-            <h3>Luxury Super Deluxe</h3>
+            <h3>Standard Room</h3>
             <p class="text-muted">
               A perfect retreat for relaxation and luxury, featuring
               state-of-the-art amenities and breathtaking views.
             </p>
             <ul class="list-unstyled">
-              <li><strong>Starts From:</strong> $299 / NIGHT</li>
+              <li><strong>Starts From:</strong> NGN50 000 / NIGHT</li>
               <li><strong>Status:</strong> Available</li>
-              <li><strong>Guest:</strong> 3</li>
-              <li><strong>Beds:</strong> 2</li>
             </ul>
-            <a class="btn btn-outline-primary" href="#">More Details</a>
+            <!-- <a class="btn btn-outline-primary" href="#">More Details</a> -->
           </div>
         </div>
         <div class="row flex-column flex-md-row align-items-center">
@@ -298,21 +309,28 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
-                    src="/assets/room-2.jpg"
+                    src="https://i.imgur.com/TmRtIvU.jpeg"
                     class="d-block w-100"
                     alt="Luxury Suite"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="/assets/room-2.jpg"
+                    src="https://i.imgur.com/H61hRam.jpeg"
                     class="d-block w-100"
                     alt="Luxury Suite"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="/assets/room-2.jpg"
+                    src="https://i.imgur.com/FMwOH0o.jpeg"
+                    class="d-block w-100"
+                    alt="Luxury Suite"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.imgur.com/F51uV06.jpeg"
                     class="d-block w-100"
                     alt="Luxury Suite"
                   />
@@ -345,25 +363,23 @@
           </div>
           <div class="col-md-6 order-md-1 order-2">
             <!-- Text Content -->
-            <h3 class="room-title">Luxury Suite</h3>
+            <h3 class="room-title">Executive</h3>
             <p class="room-description">
               Spacious luxury suite with ocean views, featuring king-size beds,
               modern decor, and premium amenities.
             </p>
             <ul class="list-unstyled">
-              <li><strong>Price:</strong> $499 / night</li>
-              <li><strong>Max Guests:</strong> 4</li>
-              <li><strong>Size:</strong> 350 sqft</li>
-              <li><strong>View:</strong> Sea View</li>
+              <li><strong>Price:</strong> NGN90 000 / night</li>
+              <li><strong>Status:</strong> Available</li>
             </ul>
-            <button class="btn btn-outline-primary">More Details</button>
+            <!-- <button class="btn btn-outline-primary">More Details</button> -->
           </div>
         </div>
       </div>
     </section>
 
     <!-- Services section -->
-    <div class="container section-padding">
+    <div class="container section-padding" id="services">
       <!-- Row for intro and cards -->
       <div class="row g-4">
         <!-- Introductory Content -->
@@ -380,34 +396,30 @@
           <div class="row">
             <div class="col-6 mb-3">
               <div class="service-card service-card1">
-                <i class="fa fa-utensils fa-2x"></i>
-                <h5>Restaurant</h5>
-                <p class="text-center">Fine dining with gourmet dishes.</p>
+                <i class="fas fa-bolt fa-2x"></i>
+                <h5>Uninterrupted Power Supply</h5>
+                <p class="text-center">Enjoy seamless access to electricity around the clock, ensuring comfort and convenience throughout your stay.</p>
               </div>
             </div>
             <div class="col-6 mb-3">
               <div class="service-card service-card2">
-                <i class="fa fa-spa fa-2x"></i>
-                <h5>Health & Beauty</h5>
-                <p class="text-center">
-                  Relax and rejuvenate at our full-service spa.
-                </p>
+                <i class="fas fa-cocktail fa-2x"></i>
+                <h5>Fully-Stocked Bar Facilities</h5>
+                <p class="text-center">Relax and unwind at our well-appointed bar, offering a wide selection of drinks in a cozy, inviting atmosphere.</p>
               </div>
             </div>
             <div class="col-6">
               <div class="service-card service-card3">
-                <i class="fa fa-swimmer fa-2x"></i>
-                <h5>Swimming Pool</h5>
-                <p class="text-center">Outdoor pool with a sun deck and bar.</p>
+                <i class="fas fa-wifi fa-2x"></i>
+                <h5>High-Speed Wi-Fi Access</h6>
+                  <p class="text-center">Stay connected with our complimentary high-speed Wi-Fi, available throughout the guest house for all your internet needs.</p>
               </div>
             </div>
             <div class="col-6">
               <div class="service-card service-card4">
-                <i class="fa fa-users fa-2x"></i>
-                <h5>Conference Room</h5>
-                <p class="text-center">
-                  State-of-the-art facilities for your business
-                </p>
+                <i class="fas fa-car fa-2x"></i>
+                  <h5>Complimentary Secure Parking</h5>
+                  <p>Benefit from peace of mind with our secure parking facilities, available free of charge for all guests throughout your stay.</p>
               </div>
             </div>
           </div>
@@ -416,10 +428,9 @@
     </div>
 
     <!-- Gallery -->
-    <!-- pictures -->
 
     <!-- videos -->
-    <div class="container">
+    <div class="container" id="gallery">
       <div class="row align-items-center">
         <!-- Text content for the gallery -->
         <div class="col-lg-6">
@@ -459,30 +470,101 @@
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
+              <button
+                type="button"
+                data-bs-target="#galleryCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#galleryCarousel"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#galleryCarousel"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#galleryCarousel"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#galleryCarousel"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#galleryCarousel"
+                data-bs-slide-to="8"
+                aria-label="Slide 9"
+              ></button>
             </div>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="/assets/room-1.jpg"
+                  src="https://i.imgur.com/K4S50dy.jpeg"
                   class="d-block w-100"
                   alt="Room View"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/assets/room-1.jpg"
+                  src="https://i.imgur.com/u8pIECV.jpeg"
                   class="d-block w-100"
                   alt="Luxury Suite"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/assets/room-1.jpg"
+                  src="https://i.imgur.com/7PWqzd3.jpeg"
                   class="d-block w-100"
                   alt="Comfortable Stay"
                 />
               </div>
+              <div class="carousel-item">
+              <img
+                src="https://i.imgur.com/FaEtick.jpeg"
+                class="d-block w-100"
+                alt="Comfortable Stay"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://i.imgur.com/dvAcrNI.jpeg"
+                class="d-block w-100"
+                alt="Comfortable Stay"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://i.imgur.com/TmRtIvU.jpeg"
+                class="d-block w-100"
+                alt="Comfortable Stay"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/genisys-guest-house-bar.jpg"
+                class="d-block w-100"
+                alt="Comfortable Stay"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/genisys-guest-house-generator-house.jpg"
+                class="d-block w-100"
+                alt="Comfortable Stay"
+              />
+            </div>
             </div>
             <!-- Controls -->
             <button
@@ -516,30 +598,30 @@
       <!-- Room Tours Section -->
 
       <div class="row py-5">
-        <h3 class="mb-1">Room Tours</h3>
-        <p>
+        <h3 class="my-3">Room Tours</h3>
+        <p class="mb-5">
           Step inside and discover the serene comfort and elegant design of our
-          rooms at Genisys Guest House. Each space is crafted to ensure your
+          rooms at Genisys Guest House in Ijebu ode. Each space is crafted to ensure your
           stay is relaxing, with thoughtful amenities and luxurious touches that
           make every moment memorable. Explore our variety of room options to
           find the perfect fit for your stay.
         </p>
         <!-- Standard Room -->
-        <div class="col-md-6 mb-4">
+        <div class="col-md-6 mb-5">
           <div class="card bg-transparent room-card">
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="room-card-body">
                   <h5 class="card-title text-start">Standard Room</h5>
                   <p class="card-text text-start">
-                    A cozy retreat perfect for relaxation.
+                    Our Standard Rooms offer a cozy and comfortable environment, ideal for relaxing after a busy day. Equipped with modern amenities and elegantly designed.
                   </p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="position-relative">
                   <img
-                    src="/assets/IMG-20240603-WA0046.jpg"
+                    src="https://i.imgur.com/sSFRxTa.jpeg"
                     class="img-fluid rounded-start"
                     alt="Standard Room Tour"
                   />
@@ -550,6 +632,32 @@
                   >
                     <i class="fa fa-play fa-2x" aria-hidden="true"></i>
                   </button>
+                </div>
+                <!-- Modal for Standard Room -->
+                <div
+                  class="modal fade"
+                  id="standardRoomModal"
+                  tabindex="-1"
+                  aria-labelledby="standardRoomModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <iframe
+                          width="100%"
+                          height="450"
+                          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+                          frameborder="0"
+                          allow="accelerometer; autoplay;
+                          clipboard-write; encrypted-media; gyroscope;
+                          picture-in-picture"
+                          allowfullscreen
+                        >
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -560,9 +668,9 @@
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="room-card-body room-card-body2">
-                  <h5 class="card-title text-start">Standard Room</h5>
+                  <h5 class="card-title text-start">Deluxe Room</h5>
                   <p class="card-text text-start">
-                    A cozy retreat perfect for relaxation.
+                    Our Deluxe Rooms provide spacious comfort with enhanced amenities, superior bedding, and more making them perfect for those seeking extra luxury and relaxation.</p>
                   </p>
                 </div>
               </div>
@@ -581,6 +689,32 @@
                     <i class="fa fa-play fa-2x" aria-hidden="true"></i>
                   </button>
                 </div>
+                <!-- Modal for Standard Room -->
+                <div
+                  class="modal fade"
+                  id="standardRoomModal"
+                  tabindex="-1"
+                  aria-labelledby="standardRoomModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <iframe
+                          width="100%"
+                          height="450"
+                          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+                          frameborder="0"
+                          allow="accelerometer; autoplay;
+                          clipboard-write; encrypted-media; gyroscope;
+                          picture-in-picture"
+                          allowfullscreen
+                        >
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -590,9 +724,9 @@
       </div>
     </div>
 
-    <section class="bg-secondary-light py-5">
+    <section class="bg-secondary-light py-5" id="testimonals">
       <div class="container">
-        <h2 class="text-center mb-4">What Our Clients Say</h2>
+        <h2 class="text-center py-4 mb-4">What Our Clients Say</h2>
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <!-- Testimonial 1 -->
           <div class="col">
@@ -605,14 +739,14 @@
                     with and they made us feel so comfortable. Incredibly
                     trustworthy and high value!!! Thank you!"
                   </p>
-                  <footer class="blockquote-footer text-end">
-                    Jane Doe, <cite title="Company A">Company A</cite>
+                  <footer class="blockquote-footer mb-4 text-end">
+                    Indina Inc. <cite title="Indina Inc."></cite>
                   </footer>
                 </blockquote>
                 <div class="d-flex justify-content-end">
                   <img
                     src="assets/about-picture.jpg"
-                    alt="Jane Doe"
+                    alt="Paulkelvin"
                     class="rounded-circle"
                     style="width: 60px; height: 60px; object-fit: cover"
                   />
@@ -626,18 +760,16 @@
               <div class="card-body testimonial-card">
                 <blockquote class="blockquote mb-4">
                   <p>
-                    "This team managed to not only get us top positions on
-                    Google for all of our top keywords, but they kept us there,
-                    as well! I would highly recommend this company to anyone."
+                    "My experience at Genisys Guest House was nothing short of exceptional. The staff's warmth and efficiency made check-in a breeze, setting the tone for a delightful stay. The room was beautifully appointed, combining luxury with comfort, and the bed provided restful sleep."
                   </p>
-                  <footer class="blockquote-footer text-end">
-                    John Smith, <cite title="Company B">Company B</cite>
+                  <footer class="blockquote-footer mb-4 text-end">
+                    Paulkelvin <cite title="Company B"></cite>
                   </footer>
                 </blockquote>
                 <div class="d-flex justify-content-end">
                   <img
-                    src="assets/about-picture.jpg"
-                    alt="John Smith"
+                    src="assets/ibukun-adesanya-paulkelvin.jpeg"
+                    alt="ibukun-adesanya-paulkelvin"
                     class="rounded-circle"
                     style="width: 60px; height: 60px; object-fit: cover"
                   />
@@ -650,7 +782,7 @@
       </div>
     </section>
 
-    <section class="location-section py-5 bg-light">
+    <section class="location-section py-5 bg-light" id="location">
       <div class="container">
         <h2 class="text-center mb-4">Location & Directions</h2>
         <div class="row g-4 align-items-center">
@@ -669,21 +801,23 @@
           </div>
           <div class="col-md-6">
             <h3>Visit Us</h3>
-            <p class="mb-2">1234 Street Name, City, State, Country</p>
+            <p class="mb-2">11 Kanimodo close, Molipa, Ijebu Ode. Ogun State</p>
             <p>
               <strong>Opening Hours:</strong> Monday - Friday, 9:00 AM to 5:00
               PM
             </p>
             <h4>Directions</h4>
             <p>
-              If you are coming by public transportation, use the XYZ subway or
-              bus lines. If driving, free parking is available at our location.
+              Leaders foundation nusery and primary school is the closest
+              location landmark, find your there from any where in Ijebu ode and
+              Genisys is about a stone throw from there. You can easily navigate
+              with the map.
             </p>
             <h4>Contact Us</h4>
-            <p>Phone: <a href="tel:+11234567890">(123) 456-7890</a></p>
+            <p>Phone: <a href="tel:+2348169826503">+2348169826503</a></p>
             <p>
               Email:
-              <a href="mailto:contact@example.com">contact@example.com</a>
+              <a href="mailto:contact@example.com">ibukunadesanya0@gmail.com</a>
             </p>
           </div>
         </div>
@@ -707,9 +841,9 @@
             <h5>Quick Links</h5>
             <ul class="list-unstyled">
               <li><a href="#" class="text-secondary">Home</a></li>
-              <li><a href="#" class="text-secondary">About Us</a></li>
-              <li><a href="#" class="text-secondary">Services</a></li>
-              <li><a href="#" class="text-secondary">Contact</a></li>
+              <li><a href="#about" class="text-secondary">About Us</a></li>
+              <li><a href="#services" class="text-secondary">Services</a></li>
+              <li><a href="#location" class="text-secondary">location</a></li>
             </ul>
           </div>
           <!-- Contact Info -->

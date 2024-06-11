@@ -21,4 +21,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Update on scroll
   window.addEventListener("scroll", changeHeaderOnScroll);
+
+  const links = document.querySelectorAll('a[href^="#"]'); // Select all links that start with "#"
+
+  links.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); // Prevent the default anchor behavior
+
+      const targetId = this.getAttribute("href"); // Get the href attribute
+      const targetSection = document.querySelector(targetId); // Select the target section
+
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 120, // Adjust this value based on your fixed header size or other offsets
+          behavior: "smooth",
+        });
+      }
+    });
+  });
 });

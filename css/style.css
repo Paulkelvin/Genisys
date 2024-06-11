@@ -147,6 +147,10 @@ h6 {
   font-weight: 700;
 }
 
+h1 {
+  color: #fff;
+}
+
 p {
   font-size: 1rem; /* Suitable font size for paragraph text */
   margin-bottom: 1em; /* Adequate spacing between paragraphs */

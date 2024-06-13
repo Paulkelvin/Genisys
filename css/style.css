@@ -154,9 +154,9 @@ h1 {
 }
 
 p {
-  font-size: 1rem; /* Suitable font size for paragraph text */
-  margin-bottom: 1em; /* Adequate spacing between paragraphs */
-  color: #555; /* Darker grey for better contrast and readability */
+  font-size: 1rem;
+  margin-bottom: 1em;
+  color: #555;
 }
 
 .hero-section p {
@@ -170,22 +170,22 @@ p {
 
 /* Primary button uses a deeper shade for prominence */
 .btn-primary {
-  background-color: #3174ad; /* A deep blue */
-  color: #ffffff; /* White text for contrast */
+  background-color: #3174ad;
+  color: #ffffff;
   border: none;
 }
 
 /* Secondary button with a softer appearance */
 .btn-outline-primary {
   background-color: transparent;
-  color: #3174ad; /* Same blue as the primary button, but softer appearance */
-  border-color: #3174ad; /* Border matches the text color */
+  color: #3174ad;
+  border-color: #3174ad;
 }
 
 /* Hover effects to make interactive elements clear */
 .btn-primary:hover,
 .btn-outline-primary:hover {
-  background-color: #25597b; /* A darker shade of the primary color for hover */
+  background-color: #25597b;
   color: #ffffff;
 }
 
@@ -208,7 +208,7 @@ p {
 
 /* Increase the space before the 'Call now' button */
 .extra-menu {
-  margin-left: 2rem; /* Adjust as needed to push it further right */
+  margin-left: 2rem;
 }
 
 /* Ensure the last item (Contact Us) doesn't have additional margin on the right */
@@ -233,13 +233,13 @@ p {
 }
 
 .header-scrolled {
-  backdrop-filter: blur(0px); /* Remove the blur when scrolled */
-  background-color: #f9f9f9; /* Change to a solid color on scroll */
+  backdrop-filter: blur(0px);
+  background-color: #f9f9f9;
 }
 
 .header-scrolled .nav-link,
 .header-scrolled .white-link a {
-  color: #333; /* Darker text for better visibility */
+  color: #333;
 }
 
 .header-scrolled .nav-link:hover {
@@ -248,13 +248,11 @@ p {
 }
 
 .header-scrolled .navbar-toggler {
-  border-color: #333; /* Optional: change toggle button style if needed */
+  border-color: #333;
 }
 
 .soft-gradient-bg {
   background: linear-gradient(135deg, #ffffff 0%, #f7f9fc 100%);
-
-  /* This creates an extremely subtle gradient from white to a very light blueish grey */
 }
 
 .section-padding {
@@ -264,8 +262,8 @@ p {
 
 .fancy-box-01 {
   position: relative;
-  padding: 0 4rem; /* Add padding to the left and right */
-  text-align: center; /* Center the text within the box */
+  padding: 0 4rem;
+  text-align: center;
   padding-right: 2rem;
 }
 
@@ -280,7 +278,7 @@ p {
   border: 10px solid;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Center vertically */
+  transform: translateY(-50%);
   height: 100%;
   width: 3rem;
 }
@@ -297,7 +295,7 @@ p {
 
 /* Subdued grey text for descriptions and sub-headings */
 .text-muted-custom {
-  color: #6c757d; /* Soft grey */
+  color: #6c757d;
 }
 
 /* Specific styling to increase the left padding of the middle column on larger screens */
@@ -315,7 +313,6 @@ mark,
     120deg,
     #b0dfff 0%,
     /* Start color */ #b0dfff 100%
-      /* End color - you can adjusf this to a lighter or darker shade if desired */
   );
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
@@ -326,19 +323,14 @@ mark,
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .fancy-box-01 {
-    padding: 0 2rem; /* Reduce padding on smaller screens */
+    padding: 0 2rem;
   }
 }
 
 /* Styling adjustments for legibility and branding */
 .bg-primary-light {
-  color: #4ab7ff; /* Full opacity for the text color */
-  background-color: rgba(
-    74,
-    183,
-    255,
-    0.08
-  ); /* Background color with reduced opacity */
+  color: #4ab7ff;
+  background-color: rgba(74, 183, 255, 0.08);
 }
 
 .bg-secondary-light {
@@ -367,7 +359,7 @@ mark,
 .display-4 {
   color: #101010;
   letter-spacing: -0.02em;
-  font-size: calc(1.375rem + 1.5vw); /* Responsive font size */
+  font-size: calc(1.375rem + 1.5vw);
 }
 
 .white-text .display-1,
@@ -380,7 +372,7 @@ mark,
 /* rooms section */
 
 .rooms-section {
-  background-color: #f8f9fa; /* Light background for the section */
+  background-color: #f8f9fa;
 }
 
 .rooms-section img {
@@ -405,25 +397,25 @@ mark,
 
 /* Base style for room cards */
 .room-card {
-  background-color: #f0f4f8; /* Light grayish blue, very subtle */
-  border-radius: 4px; /* Soft rounded corners for a smoother look */
-  border: 1px solid #d1e1e9; /* Light blue border to add definition */
+  background-color: #f0f4f8;
+  border-radius: 4px;
+  border: 1px solid #d1e1e9;
 }
 
 /* Alternate color for another set of cards */
 .room-card-alt {
-  background-color: #e7eff6; /* Slightly different shade of light blue */
+  background-color: #e7eff6;
 }
 
 /* Card content area styling */
 .room-card-body {
-  padding: 15px; /* Adequate padding for content separation */
-  color: #333; /* Dark grey text for better readability */
+  padding: 15px;
+  color: #333;
 }
 
 /* Style for the play button to make it stand out appropriately */
 .room-card .btn-play {
-  background-color: #005f73; /* Using a darker, vibrant color from your palette */
+  background-color: #005f73;
   color: #ffffff;
   border-radius: 50%;
   width: 50px;
@@ -435,23 +427,22 @@ mark,
 
 /* Ensuring the image fits well */
 .room-card img {
-  border-top-left-radius: 4px; /* Rounded corners on the image top */
+  border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   width: 100%;
   height: auto;
 }
 
 @media (min-width: 768px) {
-  /* Adjusting for Bootstrap’s medium breakpoint */
   .room-card {
-    padding-right: 15px; /* Space on the right of each card */
-    padding-left: 15px; /* Space on the left of each card */
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
 /* More precise control over mobile spacing if needed */
 .room-card {
-  margin-bottom: 20px; /* Increase space below each card on mobile */
+  margin-bottom: 20px;
 }
 
 /* Responsive tweaks for better mobile display */
@@ -470,24 +461,24 @@ mark,
 }
 
 .service-card i {
-  color: #00b74a; /* Green to match your branding */
+  color: #00b74a;
   margin-bottom: 10px;
 }
 
 .service-card h5 {
-  color: #333; /* Dark text for readability */
+  color: #333;
   font-size: 1.25rem;
 }
 
 .service-card p {
-  color: #666; /* Lighter text to reduce emphasis */
+  color: #666;
 }
 
 /* Base colors definitions */
 :root {
-  --light-green: #ccf2d6; /* Soft green */
-  --light-blue: #e0f4fd; /* Soft blue */
-  --light-yellow: #fff9e6; /* Soft yellow */
+  --light-green: #ccf2d6;
+  --light-blue: #e0f4fd;
+  --light-yellow: #fff9e6;
 }
 
 /* General card styles */
@@ -497,34 +488,30 @@ mark,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(
-    --light-green
-  ); /* Default light background for all cards */
-  color: #333; /* Ensuring text is readable on light background */
+  background-color: var(--light-green);
+  color: #333;
 }
 
 /* Specific colors for different cards for visual interest */
 .service-card1,
 .service-card2 {
-  /* First and second card */
-  background-color: var(--light-blue);
+  background-color: #99ccff;
 }
 
-.service-card3,
+.service -card3,
 .service-card4 {
-  /* Third and fourth card */
-  background-color: var(--light-yellow) !important;
+  background-color: #fff2cc;
 }
 
 .col-md-6 {
-  flex: 1 0 50%; /* Each box takes up 50% width on medium and larger screens */
-  padding: 5px; /* Provides spacing between boxes */
+  flex: 1 0 50%;
+  padding: 5px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 991px) {
   .col-md-6 {
-    flex: 1 0 100%; /* Each card takes full width on smaller screens */
+    flex: 1 0 100%;
   }
 }
 
@@ -538,55 +525,51 @@ mark,
 /* Gallery */
 
 .carousel-item img {
-  height: 400px; /* Set a fixed height for images in the carousel */
-  object-fit: cover; /* Ensure images cover the area without distortion */
+  height: 400px;
+  object-fit: cover;
 }
 
 @media (max-width: 992px) {
   .carousel-item img {
-    height: 250px; /* Smaller height for smaller devices */
+    height: 250px;
   }
 }
 
 .card {
   border: none;
-  background: #f8f9fa; /* Light background for the card */
+  background: #f8f9fa;
 }
 
 .card-body {
-  padding-left: 0; /* Standard padding for card body */
+  padding-left: 0;
 }
 
 .card img {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  transition: transform 0.3s ease; /* Smooth transform for hover effects */
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
 .btn.position-absolute {
-  background-color: transparent; /* Transparent background for the button */
+  background-color: transparent;
   border: none;
-  cursor: pointer; /* Cursor indicates the image/button is clickable */
+  cursor: pointer;
 }
 
 .btn i.fa-play {
-  color: #007bff; /* Bootstrap primary color for the play icon */
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Text shadow to make the icon stand out */
+  color: #007bff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Testimonials */
 
 .section-testimonials {
-  background: linear-gradient(
-    135deg,
-    #eef2f3 0%,
-    #d3dfe9 100%
-  ); /* Updated subtle gradient background */
-  padding: 2rem 0; /* Added padding for overall spacing */
+  background: linear-gradient(135deg, #eef2f3 0%, #d3dfe9 100%);
+  padding: 2rem 0;
 }
 
 .testimonial-card {
-  padding: 1.5rem; /* Slightly increased padding */
+  padding: 1.5rem;
   background-color: #ffffff;
   margin: 0.5rem;
   border: none !important;
@@ -598,23 +581,23 @@ mark,
 
 .card-body blockquote {
   font-style: italic;
-  color: #555; /* Slightly darker for better readability */
+  color: #555;
 }
 
 .card-body img {
   width: 60px;
   height: 60px;
-  border-radius: 50%; /* Circle shape */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
-  margin-top: -3rem; /* Pull the image up to overlap the card edge slightly */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow around the image */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -3rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .blockquote-footer {
-  color: #999; /* Lighter grey for a softer appearance */
+  color: #999;
   font-size: 0.875rem;
-  text-align: right; /* Ensure alignment is consistent */
-  margin-top: 1rem; /* Space from the quote to the footer for clarity */
+  text-align: right;
+  margin-top: 1rem;
   background-color: transparent;
 }
 
@@ -623,7 +606,7 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
-  color: #666; /* Lighter text for quotes */
+  color: #666;
 }
 
 blockquote:before {
@@ -640,15 +623,15 @@ blockquote p {
 }
 
 .location-section {
-  background-color: #f4f4f7; /* A soft grey or your theme's light color */
+  background-color: #f4f4f7;
   color: #333;
-  font-family: "Open Sans", sans-serif; /* Example font */
+  font-family: "Open Sans", sans-serif;
 }
 
 .location-section h2,
 .location-section h3,
 .location-section h4 {
-  color: #005f73; /* Theme color for headers */
+  color: #005f73;
 }
 
 .location-section p {
@@ -657,7 +640,7 @@ blockquote p {
 
 .map-responsive {
   border-radius: 10px;
-  overflow: hidden; /* To apply border-radius on iframe */
+  overflow: hidden;
 }
 
 .location-section a {
@@ -666,7 +649,7 @@ blockquote p {
 }
 
 .location-section a:hover {
-  color: #023e58; /* Darker shade on hover */
+  color: #023e58;
 }
 
 .btn-directions {
@@ -681,8 +664,8 @@ blockquote p {
   background-color: #023e58;
 }
 .footer {
-  background-color: #343a40; /* A dark color for professional appearance */
-  color: #f8f9fa; /* Light text for contrast */
+  background-color: #343a40;
+  color: #f8f9fa;
   padding: 20px 0;
 }
 
@@ -694,16 +677,16 @@ blockquote p {
 .footer p,
 .footer a {
   color: #ced4da;
-  font-size: 0.9rem; /* Smaller text size for footer elements */
+  font-size: 0.9rem;
 }
 
 .footer a:hover {
-  color: #adb5bd !important; /* Lighter grey on hover for links */
+  color: #adb5bd !important;
 }
 
 .footer ul {
   padding: 0;
-  list-style-type: none; /* Removes bullet points from links */
+  list-style-type: none;
 }
 
 footer .list-unstyled li a {
@@ -715,22 +698,21 @@ footer .list-unstyled li a {
 }
 
 .footer .social-icons a {
-  font-size: 1.5rem; /* Larger icons for visibility */
-  display: inline-block; /* Proper alignment of icons */
+  font-size: 1.5rem;
+  display: inline-block;
 }
 
 .footer .social-icons a:hover {
   color: #ffffff !important;
 }
 
-/* Heading Style */
-
 /* Paragraph Style */
 .room-card-body {
-  background-color: #e8f5e9;
+  background-color: #ccffcc;
 }
+
 .room-card-body2 {
-  background-color: #e3f2fd;
+  background-color: #cceeff;
 }
 
 img {

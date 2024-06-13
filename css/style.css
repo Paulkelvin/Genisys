@@ -172,7 +172,11 @@ p {
 
 .hero-section p {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: clamp(
+    1rem,
+    2vw,
+    2rem
+  ); /* Adjusts between a minimum of 1rem and a maximum of 2rem, scaling based on the viewport width */
 }
 
 .heading-color {

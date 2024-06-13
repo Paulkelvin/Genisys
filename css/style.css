@@ -655,6 +655,7 @@ blockquote p {
 
 .map-responsive {
   border-radius: 10px;
+  border: 1px solid #005f73;
   overflow: hidden;
 }
 

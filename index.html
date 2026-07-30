@@ -11,6 +11,7 @@
     <meta property="og:url" content="https://www.genisysguesthouse.netlify.app">
     <title>Genisys Guest House - Comfortable & Affordable Stay in Ijebu Ode</title>
     <link rel="icon" href="/assets/genisys-logo.png" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,8 +22,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -30,21 +33,26 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <nav class="navbar navbar-expand-lg">
         <div class="container nav-wrap">
-          <!-- Logo -->
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="#home">
             <img class="brand-logo" src="/assets/genisys-logo.png" alt="Genisys Guest House logo" />
             <span class="brand-name">Genisys</span>
           </a>
-          <!-- Quick contact (always visible, including mobile) -->
+
           <div class="nav-quick-actions order-lg-3">
-            <a href="tel:+2348169826503" class="icon-link" aria-label="Call Genisys Guest House">
+            <a href="tel:+2348023403704" class="icon-link" aria-label="Call Genisys Guest House">
               <i class="fas fa-phone-alt"></i>
             </a>
-            <a href="https://wa.me/2348169826503" target="_blank" class="btn btn-pill btn-accent d-none d-sm-inline-flex">Book Now</a>
+            <a
+              href="https://wa.me/2348023403704"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary-solid d-none d-sm-inline-flex"
+              >Book Now</a
+            >
           </div>
-          <!-- Mobile Toggle -->
+
           <button
             class="navbar-toggler order-lg-2"
             type="button"
@@ -56,26 +64,22 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- Menu -->
+
           <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
             <ul class="navbar-nav mx-lg-auto">
-              <li class="nav-item">
-                <a href="/" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="#rooms" class="nav-link">Rooms</a>
-              </li>
-              <li class="nav-item">
-                <a href="#gallery" class="nav-link">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a href="#location" class="nav-link">Location</a>
-              </li>
-              <li class="nav-item d-lg-none mt-2">
-                <a href="https://wa.me/2348169826503" target="_blank" class="btn btn-pill btn-accent w-100">Book Now</a>
+              <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="#rooms" class="nav-link">Rooms</a></li>
+              <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+              <li class="nav-item"><a href="#location" class="nav-link">Location</a></li>
+              <li class="nav-item d-lg-none mt-3">
+                <a
+                  href="https://wa.me/2348023403704"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary-solid w-100"
+                  >Book Now</a
+                >
               </li>
             </ul>
           </div>
@@ -87,146 +91,184 @@
     <section class="hero-section" id="home">
       <div class="container">
         <div class="hero-media">
-          <video autoplay muted loop playsinline id="myVideo">
+          <video autoplay muted loop playsinline id="myVideo" poster="https://i.imgur.com/n2xkKP5.jpeg">
             <source src="/assets/genisys-guest-house-deluxe-apartment-tour.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
           <div class="hero-overlay"></div>
           <div class="hero-copy">
-            <h1>Welcome to <span class="accent-light">Genisys</span> Guest House</h1>
+            <span class="hero-eyebrow">Ijebu Ode, Ogun State</span>
+            <h1>Welcome to Genisys Guest House</h1>
             <p class="hero-lead">
-              Discover comfort and convenience at <strong>Genisys Guest House</strong>, your home away from home in Ijebu Ode.
+              Discover comfort and convenience at Genisys Guest House, your home away from home in
+              Ijebu Ode.
             </p>
             <div class="hero-actions">
-              <a href="https://wa.me/2348169826503" target="_blank" class="btn btn-pill btn-accent btn-lg">Contact Now</a>
-              <a href="#gallery" class="btn btn-pill btn-outline-light btn-lg">
-                Explore More <i class="fas fa-arrow-right ms-2"></i>
+              <a
+                href="https://wa.me/2348023403704"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary-solid btn-large"
+              >
+                <i class="fab fa-whatsapp me-2"></i>Book on WhatsApp
               </a>
+              <a href="#rooms" class="btn btn-ghost-light btn-large">View Our Rooms</a>
             </div>
           </div>
         </div>
-        <!-- Floating stat card -->
-        <div class="stat-card">
-          <h5>Why Stay With Us?</h5>
-          <p>Modern comforts and personalized service in a serene setting, tailored for every kind of traveller.</p>
-          <div class="stat-row">
-            <div class="stat">
-              <strong>2</strong>
-              <span>Room Types</span>
-            </div>
-            <div class="stat">
+
+        <!-- Stats strip -->
+        <div class="stats-strip">
+          <div class="stat-item">
+            <i class="fas fa-bolt stat-icon"></i>
+            <div>
               <strong>24/7</strong>
               <span>Power Supply</span>
             </div>
-            <div class="stat">
-              <strong>Prime</strong>
-              <span>Ijebu Ode Location</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-bed stat-icon"></i>
+            <div>
+              <strong>2</strong>
+              <span>Room Types</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-wifi stat-icon"></i>
+            <div>
+              <strong>Free</strong>
+              <span>Wi-Fi &amp; Parking</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-map-marker-alt stat-icon"></i>
+            <div>
+              <strong>Molipa</strong>
+              <span>Central Ijebu Ode</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Rooms grid / "Discover" section -->
-    <section class="section rooms-grid-section" id="rooms">
+    <!-- Rooms -->
+    <section class="section" id="rooms">
       <div class="container">
-        <div class="row align-items-end g-4 mb-4">
-          <div class="col-lg-6">
-            <h2 class="mb-0">Discover Our <span class="accent">Comfortable Rooms</span></h2>
-          </div>
-          <div class="col-lg-6">
-            <p class="text-muted-custom mb-0">
-              Explore our variety of room options and find the perfect fit for your stay. Each space is
-              crafted to ensure your time at Genisys Guest House is relaxing, with thoughtful amenities
-              and luxurious touches.
-            </p>
-          </div>
+        <div class="section-head">
+          <span class="eyebrow">Our Rooms</span>
+          <h2>Choose Your Perfect Room</h2>
+          <p class="section-sub">
+            Two room types, each crafted for a relaxing stay with thoughtful amenities. Pick the one
+            that fits you and book in seconds on WhatsApp.
+          </p>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-7">
-            <a
-              class="grid-tile grid-tile-lg"
-              href="https://wa.me/2348169826503?text=Hi%2C%20I%27m%20interested%20in%20the%20Standard%20Room%20at%20Genisys%20Guest%20House"
-              target="_blank"
-            >
-              <img src="https://i.imgur.com/n2xkKP5.jpeg" alt="Standard Room at Genisys Guest House" />
-              <span class="tile-badge" aria-hidden="true"><i class="fas fa-paper-plane"></i></span>
-              <span class="tile-info">
-                <span class="tile-price">NGN30,000/night</span>
-                <span class="tile-title">Standard Room</span>
-              </span>
-            </a>
-          </div>
-          <div class="col-lg-5">
-            <div class="row g-4">
-              <div class="col-6">
-                <a
-                  class="grid-tile"
-                  href="https://wa.me/2348169826503?text=Hi%2C%20I%27m%20interested%20in%20the%20Premium%20Room%20at%20Genisys%20Guest%20House"
-                  target="_blank"
-                >
-                  <img src="https://i.imgur.com/TmRtIvU.jpeg" alt="Premium Room at Genisys Guest House" loading="lazy" />
-                  <span class="tile-badge" aria-hidden="true"><i class="fas fa-paper-plane"></i></span>
-                </a>
+
+        <div class="row g-3 g-lg-4">
+          <!-- Standard Room -->
+          <div class="col-md-6">
+            <article class="room-card">
+              <div class="room-card-media">
+                <img src="https://i.imgur.com/n2xkKP5.jpeg" alt="Standard Room at Genisys Guest House" />
+                <span class="status-badge">Available</span>
               </div>
-              <div class="col-6">
-                <div class="grid-tile">
-                  <img src="/assets/genisys-guest-house-bar.jpg" alt="Bar and lounge area at Genisys Guest House" loading="lazy" />
+              <div class="room-card-body">
+                <div class="room-card-top">
+                  <h3>Standard Room</h3>
+                  <p class="room-price">NGN30,000<span>/night</span></p>
+                </div>
+                <p class="room-desc">
+                  A cozy, comfortable retreat ideal for relaxing after a busy day, with modern
+                  amenities and an elegant finish.
+                </p>
+                <ul class="room-amenities">
+                  <li><i class="fas fa-bolt"></i> 24/7 Power</li>
+                  <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                  <li><i class="fas fa-car"></i> Parking</li>
+                </ul>
+                <div class="room-card-actions">
+                  <a
+                    href="https://wa.me/2348023403704?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Standard%20Room%20at%20Genisys%20Guest%20House"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary-solid"
+                    >Book Standard Room</a
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark-soft"
+                    data-bs-toggle="modal"
+                    data-bs-target="#standardRoomModal"
+                  >
+                    <i class="fas fa-play me-2"></i>Room Tour
+                  </button>
                 </div>
               </div>
-              <div class="col-12">
-                <div class="grid-tile grid-tile-wide">
-                  <img src="https://i.imgur.com/K4S50dy.jpeg" alt="Room interior at Genisys Guest House" loading="lazy" />
+            </article>
+          </div>
+
+          <!-- Premium Room -->
+          <div class="col-md-6">
+            <article class="room-card">
+              <div class="room-card-media">
+                <img src="https://i.imgur.com/TmRtIvU.jpeg" alt="Premium Room at Genisys Guest House" loading="lazy" />
+                <span class="status-badge">Available</span>
+              </div>
+              <div class="room-card-body">
+                <div class="room-card-top">
+                  <h3>Premium Room</h3>
+                  <p class="room-price">NGN35,000<span>/night</span></p>
+                </div>
+                <p class="room-desc">
+                  Spacious suite with king-size bedding, modern decor and enhanced amenities for
+                  guests who want extra room to unwind.
+                </p>
+                <ul class="room-amenities">
+                  <li><i class="fas fa-bolt"></i> 24/7 Power</li>
+                  <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                  <li><i class="fas fa-cocktail"></i> Bar Access</li>
+                </ul>
+                <div class="room-card-actions">
+                  <a
+                    href="https://wa.me/2348023403704?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Premium%20Room%20at%20Genisys%20Guest%20House"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary-solid"
+                    >Book Premium Room</a
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark-soft"
+                    data-bs-toggle="modal"
+                    data-bs-target="#premiumRoomModal"
+                  >
+                    <i class="fas fa-play me-2"></i>Room Tour
+                  </button>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row g-4 mt-1">
-          <div class="col-md-6">
-            <ul class="room-facts">
-              <li><strong>Standard Room</strong> · NGN30,000/night · Available</li>
-            </ul>
-            <p class="text-muted-custom">
-              A perfect retreat for relaxation and luxury, featuring state-of-the-art amenities and
-              breathtaking views.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <ul class="room-facts">
-              <li><strong>Premium Room</strong> · NGN35,000/night · Available</li>
-            </ul>
-            <p class="text-muted-custom">
-              Spacious luxury suite featuring king-size beds, modern decor, and premium amenities.
-            </p>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Us -->
+    <!-- About -->
     <section class="section" id="about">
       <div class="container">
         <div class="about-panel">
           <div class="about-copy">
-            <h5 class="eyebrow">About Us</h5>
-            <h2>
-              Discover <span class="accent-light">Genisys</span><br />
-              A Home Away From Home
-            </h2>
+            <span class="eyebrow eyebrow-light">About Us</span>
+            <h2>A Home Away From Home</h2>
             <p>
               Located in Ijebu Ode, Genisys Guest House provides a serene oasis offering comfortable
-              accommodation tailored for ultimate ease. Our amenities and dedicated service are designed
-              to cater to the needs of both leisure and business travellers.
+              accommodation tailored for ultimate ease. Our amenities and dedicated service are
+              designed to cater to the needs of both leisure and business travellers.
             </p>
             <p>
-              At Genisys Guest House, every detail is crafted with precision to enhance your stay.
-              Whether you are seeking a peaceful getaway or require reliable facilities for corporate
-              travel, our dedicated team ensures that each visit is smooth and memorable.
+              Every detail is crafted with precision to enhance your stay. Whether you are seeking a
+              peaceful getaway or reliable facilities for corporate travel, our team ensures each
+              visit is smooth and memorable.
             </p>
-            <a class="btn btn-pill btn-accent" href="#rooms">
-              View Our Rooms <i class="fas fa-arrow-right ms-2"></i>
-            </a>
+            <a class="btn btn-primary-solid" href="#rooms">View Our Rooms</a>
           </div>
           <div class="about-media">
             <img
@@ -240,20 +282,17 @@
     </section>
 
     <!-- Services -->
-    <section class="section services-section" id="services">
+    <section class="section section-alt" id="services">
       <div class="container">
-        <div class="row g-4 mb-4">
-          <div class="col-lg-6">
-            <h2 class="mb-0">Unparalleled <span class="accent">Hospitality</span></h2>
-          </div>
-          <div class="col-lg-6">
-            <p class="text-muted-custom mb-0">
-              Experience the perfect blend of comfort and personalized service, ensuring a memorable stay
-              at Genisys Guest House.
-            </p>
-          </div>
+        <div class="section-head">
+          <span class="eyebrow">What We Offer</span>
+          <h2>Unparalleled Hospitality</h2>
+          <p class="section-sub">
+            Experience the perfect blend of comfort and personalized service, ensuring a memorable
+            stay at Genisys Guest House.
+          </p>
         </div>
-        <div class="row g-4">
+        <div class="row g-3 g-lg-4">
           <div class="col-6 col-lg-3">
             <div class="feature-card">
               <div class="feature-icon"><i class="fas fa-bolt"></i></div>
@@ -264,21 +303,21 @@
           <div class="col-6 col-lg-3">
             <div class="feature-card">
               <div class="feature-icon"><i class="fas fa-cocktail"></i></div>
-              <h5>Fully-Stocked Bar Facilities</h5>
+              <h5>Fully-Stocked Bar</h5>
               <p>Relax and unwind at our well-appointed bar.</p>
             </div>
           </div>
           <div class="col-6 col-lg-3">
             <div class="feature-card">
               <div class="feature-icon"><i class="fas fa-wifi"></i></div>
-              <h5>High-Speed Wi-Fi Access</h5>
+              <h5>High-Speed Wi-Fi</h5>
               <p>Stay connected with our complimentary high-speed Wi-Fi.</p>
             </div>
           </div>
           <div class="col-6 col-lg-3">
             <div class="feature-card">
               <div class="feature-icon"><i class="fas fa-car"></i></div>
-              <h5>Complimentary Secure Parking</h5>
+              <h5>Secure Parking</h5>
               <p>Benefit from peace of mind with our secure parking facilities.</p>
             </div>
           </div>
@@ -286,184 +325,224 @@
       </div>
     </section>
 
-    <!-- Gallery / Room Tours showcase -->
-    <section class="section showcase-section" id="gallery">
+    <!-- Gallery -->
+    <section class="section" id="gallery">
       <div class="container">
-        <div class="text-center mb-4">
-          <h2>Room Tours &amp; <span class="accent">Gallery</span></h2>
-          <p class="text-muted-custom mx-auto showcase-lead">
-            Step inside and discover the comfort and design of our rooms at Genisys Guest House in Ijebu
-            Ode. Swipe through to explore our variety of room options and spaces.
+        <div class="section-head">
+          <span class="eyebrow">Gallery</span>
+          <h2>Inside Genisys Guest House</h2>
+          <p class="section-sub">
+            Step inside and discover the comfort and design of our rooms and shared spaces in Ijebu
+            Ode.
           </p>
         </div>
-        <div class="showcase-scroll">
-          <button
-            type="button"
-            class="showcase-card"
-            data-bs-toggle="modal"
-            data-bs-target="#standardRoomModal"
-            aria-label="Play Standard Room tour video"
-          >
-            <img src="https://i.imgur.com/sSFRxTa.jpeg" alt="Standard Room tour" loading="lazy" />
-            <span class="play-badge"><i class="fa fa-play"></i></span>
-            <span class="showcase-label">
-              <strong>Standard Room</strong>
-              <span>NGN30,000/night</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="showcase-card"
-            data-bs-toggle="modal"
-            data-bs-target="#premiumRoomModal"
-            aria-label="Play Premium Room tour video"
-          >
-            <img src="/assets/IMG-20240603-WA0046.jpg" alt="Premium Room tour" loading="lazy" />
-            <span class="play-badge"><i class="fa fa-play"></i></span>
-            <span class="showcase-label">
-              <strong>Premium</strong>
-              <span>NGN35,000/night</span>
-            </span>
-          </button>
-          <div class="showcase-card">
-            <img src="https://i.imgur.com/u8pIECV.jpeg" alt="Luxury suite at Genisys Guest House" loading="lazy" />
-          </div>
-          <div class="showcase-card">
-            <img src="https://i.imgur.com/7PWqzd3.jpeg" alt="Comfortable stay at Genisys Guest House" loading="lazy" />
-          </div>
-          <div class="showcase-card">
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item-tall">
+            <img src="https://i.imgur.com/K4S50dy.jpeg" alt="Room interior at Genisys Guest House" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="/assets/genisys-guest-house-bar.jpg" alt="Bar and lounge area" loading="lazy" />
+            <figcaption>Bar &amp; Lounge</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://i.imgur.com/u8pIECV.jpeg" alt="Suite interior" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://i.imgur.com/sSFRxTa.jpeg" alt="Standard room at Genisys Guest House" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
             <img src="https://i.imgur.com/FaEtick.jpeg" alt="Room view at Genisys Guest House" loading="lazy" />
-          </div>
-          <div class="showcase-card">
-            <img src="https://i.imgur.com/dvAcrNI.jpeg" alt="Comfortable stay at Genisys Guest House" loading="lazy" />
-          </div>
-          <div class="showcase-card">
-            <img src="/assets/genisys-guest-house-generator-house.jpg" alt="Genisys Guest House power house" loading="lazy" />
-          </div>
-          <div class="showcase-card">
-            <img src="https://i.imgur.com/vH9gwIu.jpg" alt="Comfortable stay at Genisys Guest House" loading="lazy" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Standard Room tour modal -->
-      <div class="modal fade" id="standardRoomModal" tabindex="-1" aria-labelledby="standardRoomModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header border-0">
-              <h5 class="modal-title" id="standardRoomModalLabel">Standard Room Tour</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body pt-0">
-              <iframe
-                width="100%"
-                height="450"
-                src="https://www.youtube.com/embed/PBk_g5DZCoc?si=6udrB2PCXLJFKSmQ&mute=1"
-                title="Standard Room video tour"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Premium Room tour modal -->
-      <div class="modal fade" id="premiumRoomModal" tabindex="-1" aria-labelledby="premiumRoomModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header border-0">
-              <h5 class="modal-title" id="premiumRoomModalLabel">Premium Room Tour</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body pt-0">
-              <video controls class="w-100 rounded" style="max-height: 450px">
-                <source src="/assets/VID-20240603-WA0049.mp4" type="video/mp4" />
-                Your browser does not support HTML5 video.
-              </video>
-            </div>
-          </div>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/assets/genisys-guest-house-generator-house.jpg" alt="On-site power house" loading="lazy" />
+            <figcaption>24/7 Power House</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-item-wide">
+            <img src="https://i.imgur.com/dvAcrNI.jpeg" alt="Guest room at Genisys Guest House" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://i.imgur.com/vH9gwIu.jpg" alt="Genisys Guest House interior" loading="lazy" />
+          </figure>
         </div>
       </div>
     </section>
 
+    <!-- Room tour modals -->
+    <div class="modal fade" id="standardRoomModal" tabindex="-1" aria-labelledby="standardRoomModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="standardRoomModalLabel">Standard Room Tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              width="100%"
+              height="450"
+              src="https://www.youtube.com/embed/PBk_g5DZCoc?si=6udrB2PCXLJFKSmQ&mute=1"
+              title="Standard Room video tour"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="premiumRoomModal" tabindex="-1" aria-labelledby="premiumRoomModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="premiumRoomModalLabel">Premium Room Tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <video controls playsinline class="w-100 rounded">
+              <source src="/assets/VID-20240603-WA0049.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Testimonials -->
-    <section class="section testimonials-section" id="testimonials">
+    <section class="section section-alt" id="testimonials">
       <div class="container">
-        <h2 class="text-center mb-4">What Our <span class="accent">Clients Say</span></h2>
-        <div class="row g-4">
+        <div class="section-head">
+          <span class="eyebrow">Testimonials</span>
+          <h2>What Our Guests Say</h2>
+        </div>
+        <div class="row g-3 g-lg-4">
           <div class="col-md-6">
-            <div class="testimonial-card">
-              <p class="quote">
-                "The professionalism and personalized service that we got from this company are unlike
-                any other company we worked with and they made us feel so comfortable. Incredibly
-                trustworthy and high value!!! Thank you!"
-              </p>
-              <div class="testimonial-author">
-                <span class="avatar avatar-initials" aria-hidden="true">II</span>
-                <strong>Indina Inc.</strong>
+            <figure class="review-card">
+              <div class="review-stars" role="img" aria-label="5 out of 5 stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
               </div>
-            </div>
+              <blockquote>
+                The professionalism and personalized service that we got from this company are unlike
+                any other company we worked with and they made us feel so comfortable. Incredibly
+                trustworthy and high value!
+              </blockquote>
+              <figcaption class="review-author">
+                <span class="avatar avatar-initials" aria-hidden="true">II</span>
+                <span class="review-meta">
+                  <strong>Indina Inc.</strong>
+                  <span>Corporate Guest</span>
+                </span>
+              </figcaption>
+            </figure>
           </div>
           <div class="col-md-6">
-            <div class="testimonial-card">
-              <p class="quote">
-                "My experience at Genisys Guest House was nothing short of exceptional. The staff's
-                warmth and efficiency made check-in a breeze, setting the tone for a delightful stay. The
-                room was beautifully appointed, combining comfort with a restful night's sleep."
-              </p>
-              <div class="testimonial-author">
+            <figure class="review-card">
+              <div class="review-stars" role="img" aria-label="5 out of 5 stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <blockquote>
+                My experience at Genisys Guest House was nothing short of exceptional. The staff's
+                warmth and efficiency made check-in a breeze, and the room was beautifully appointed,
+                combining comfort with a restful night's sleep.
+              </blockquote>
+              <figcaption class="review-author">
                 <img
                   src="/assets/ibukun-adesanya-paulkelvin.jpeg"
                   alt="Paulkelvin"
                   class="avatar"
                   loading="lazy"
                 />
-                <strong>Paulkelvin</strong>
-              </div>
-            </div>
+                <span class="review-meta">
+                  <strong>Paulkelvin</strong>
+                  <span>Verified Guest</span>
+                </span>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Location -->
-    <section class="section location-section" id="location">
+    <section class="section" id="location">
       <div class="container">
-        <h2 class="text-center mb-4">Location &amp; <span class="accent">Directions</span></h2>
-        <div class="row g-4 align-items-stretch">
-          <div class="col-md-6">
-            <div class="map-card">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.4567972781697!2d3.905077010185757!3d6.83570709313382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTAnMDguNiJOIDPCsDU0JzI3LjYiRQ!5e0!3m2!1sen!2sng!4v1718315523162!5m2!1sen!2sng"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+        <div class="section-head">
+          <span class="eyebrow">Find Us</span>
+          <h2>Location &amp; Directions</h2>
+        </div>
+
+        <div class="location-layout">
+          <div class="location-panel">
+            <h3>Genisys Guest House</h3>
+            <p class="location-landmark">
+              A short walk from Leaders Foundation Nursery and Primary School, a major landmark in
+              Ijebu Ode.
+            </p>
+
+            <ul class="location-list">
+              <li>
+                <span class="location-ico"><i class="fas fa-map-marker-alt"></i></span>
+                <span>
+                  <strong>Address</strong>
+                  11 Kanimodo Close, Molipa, Ijebu Ode, Ogun State
+                </span>
+              </li>
+              <li>
+                <span class="location-ico"><i class="far fa-clock"></i></span>
+                <span>
+                  <strong>Reception Hours</strong>
+                  Monday – Friday, 9:00 AM – 5:00 PM
+                </span>
+              </li>
+              <li>
+                <span class="location-ico"><i class="fab fa-whatsapp"></i></span>
+                <span>
+                  <strong>WhatsApp &amp; Calls</strong>
+                  <a href="tel:+2348023403704">0802 340 3704</a>
+                </span>
+              </li>
+              <li>
+                <span class="location-ico"><i class="fas fa-phone-alt"></i></span>
+                <span>
+                  <strong>Second Line</strong>
+                  <a href="tel:+2348169826503">+234 816 982 6503</a>
+                </span>
+              </li>
+              <li>
+                <span class="location-ico"><i class="far fa-envelope"></i></span>
+                <span>
+                  <strong>Email</strong>
+                  <a href="mailto:genisysguesthouse@gmail.com">genisysguesthouse@gmail.com</a>
+                </span>
+              </li>
+            </ul>
+
+            <div class="location-actions">
+              <a
+                class="btn btn-primary-solid"
+                href="https://www.google.com/maps/dir/?api=1&destination=6.835707,3.905077"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fas fa-directions me-2"></i>Get Directions
+              </a>
+              <a class="btn btn-outline-dark-soft" href="tel:+2348023403704">
+                <i class="fas fa-phone-alt me-2"></i>Call Us
+              </a>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="info-card">
-              <h3>Visit Us</h3>
-              <p class="mb-2">11 Kanimodo close, Molipa, Ijebu Ode. Ogun State</p>
-              <p><strong>Opening Hours:</strong> Monday - Friday, 9:00 AM to 5:00 PM</p>
-              <h4>Directions</h4>
-              <p>
-                Genisys is conveniently located just a short walk from the well-known Leaders Foundation
-                Nursery and Primary School, a major landmark in Ijebu Ode. For your convenience, we
-                recommend using the map for easy navigation to our location.
-              </p>
-              <h4>Contact Us</h4>
-              <p>Phone: <a href="tel:+2348169826503">+2348169826503</a></p>
-              <p>
-                Email:
-                <a href="mailto:genisysguesthouse@gmail.com">genisysguesthouse@gmail.com</a>
-              </p>
-            </div>
+
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.4567972781697!2d3.905077010185757!3d6.83570709313382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTAnMDguNiJOIDPCsDU0JzI3LjYiRQ!5e0!3m2!1sen!2sng!4v1718315523162!5m2!1sen!2sng"
+              title="Map showing Genisys Guest House location"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -472,54 +551,38 @@
     <footer class="footer">
       <div class="container">
         <div class="row g-4">
-          <!-- About the company -->
           <div class="col-md-4">
-            <h5>About Genisys Guest House</h5>
+            <div class="footer-brand">
+              <img src="/assets/genisys-logo.png" alt="" class="brand-logo" />
+              <span class="brand-name">Genisys</span>
+            </div>
             <p>
-              Discover comfort and convenience with us, where every stay promises to be a memorable one.
-              We are dedicated to providing exceptional service and thoughtful amenities.
+              Discover comfort and convenience with us, where every stay promises to be a memorable
+              one. Dedicated to exceptional service and thoughtful amenities in Ijebu Ode.
             </p>
           </div>
-          <!-- Quick links -->
-          <div class="col-md-4">
+          <div class="col-6 col-md-4">
             <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="/">Home</a></li>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#home">Home</a></li>
               <li><a href="#about">About Us</a></li>
+              <li><a href="#rooms">Rooms</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#location">Location</a></li>
             </ul>
           </div>
-          <!-- Contact Info -->
-          <div class="col-md-4 footer-contact">
+          <div class="col-6 col-md-4">
             <h5>Contact Us</h5>
-            <p><strong>Phone:</strong> <a href="tel:+2348169826503">+2348169826503</a></p>
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:genisysguesthouse@gmail.com">genisysguesthouse@gmail.com</a>
-            </p>
+            <ul class="list-unstyled footer-links">
+              <li><a href="https://wa.me/2348023403704" target="_blank" rel="noopener">WhatsApp: 0802 340 3704</a></li>
+              <li><a href="tel:+2348169826503">Second line: +234 816 982 6503</a></li>
+              <li><a href="mailto:genisysguesthouse@gmail.com">genisysguesthouse@gmail.com</a></li>
+            </ul>
             <div class="social-icons">
-              <a
-                href="https://web.facebook.com/profile.php?id=61560623737776"
-                target="_blank"
-                aria-label="Genisys Guest House on Facebook"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="https://x.com/genisys_ng" target="_blank" aria-label="Genisys Guest House on X"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/genisys_guest_house/"
-                target="_blank"
-                aria-label="Genisys Guest House on Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/company/genisys-guest-house"
-                target="_blank"
-                aria-label="Genisys Guest House on LinkedIn"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+              <a href="https://web.facebook.com/profile.php?id=61560623737776" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/genisys_ng" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/genisys_guest_house/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/genisys-guest-house" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
@@ -528,6 +591,16 @@
         </div>
       </div>
     </footer>
+
+    <a
+      href="https://wa.me/2348023403704"
+      class="whatsapp-fab"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

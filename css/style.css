@@ -57,6 +57,9 @@ body {
   overflow-x: hidden;
   padding-top: var(--header-h);
   -webkit-font-smoothing: antialiased;
+  /* Safety net: long tokens (emails, URLs) wrap instead of forcing
+     the page wider than the viewport on small screens. */
+  overflow-wrap: break-word;
 }
 
 img {
@@ -749,6 +752,13 @@ section[id] {
   align-items: stretch;
 }
 
+/* Grid items default to min-width:auto, which lets wide content push the
+   track past the container on narrow screens. Allow them to shrink. */
+.location-layout > *,
+.about-panel > * {
+  min-width: 0;
+}
+
 .location-panel {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -804,6 +814,14 @@ section[id] {
 .location-list span {
   font-size: 0.9375rem;
   color: var(--body);
+}
+
+/* The text column of each row must be able to shrink; `anywhere` (unlike
+   `break-word`) also shrinks min-content width so long emails don't
+   force the row wider than the panel. */
+.location-list li > span:not(.location-ico) {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .location-list a {
@@ -870,6 +888,8 @@ section[id] {
   color: rgba(255, 255, 255, 0.68);
   font-size: 0.9rem;
   transition: color 0.18s ease;
+  /* Long unbroken strings (email/phone) must wrap, not overflow the column */
+  overflow-wrap: anywhere;
 }
 
 .footer-links a:hover {
@@ -1058,6 +1078,11 @@ section[id] {
     width: 48px;
     height: 48px;
     font-size: 1.45rem;
+  }
+
+  /* Clearance so the fixed WhatsApp button never sits on the copyright line */
+  .footer {
+    padding-bottom: 4.5rem;
   }
 }
 
